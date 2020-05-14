@@ -1,0 +1,341 @@
+@font-face {
+  font-family: 'PTSerif_bold';
+  src: url('../fonts/ptserif/PTSerif-Bold.woff2') format('woff2'), url('../fonts/ptserif/PTSerif-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PTSerif_reg';
+  src: url('../fonts/ptserif/PTSerif-Regular.woff2') format('woff2'), url('../fonts/ptserif/PTSerif-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat_reg';
+  src: url('../fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'), url('../fonts/Montserrat/Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat_bold';
+  src: url('../fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'), url('../fonts/Montserrat/Montserrat-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Couture';
+  src: url('../fonts/Couture/COUTURE-Bold.woff2') format('woff2'), url('../fonts/Couture/COUTURE-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+/* Colors */
+/*Basic settings*/
+html {
+  font-size: -10px;
+}
+/* Thypography */
+.section {
+  padding: 7rem 0;
+}
+input,
+a,
+button {
+  outline: none;
+}
+/* Style */
+/* Общие стили для шапки сайта */
+.main {
+  background: #ffffff url(../img/bg_header.png) center center no-repeat;
+  background-size: cover;
+  padding: 3rem 0 8rem;
+  background-color: #ba372a;
+}
+.main a,
+.main .header-btn {
+  font-family: Montserrat_reg, sans-serif;
+  color: #ffffff;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+a {
+  height: 7rem;
+  line-height: 7rem;
+  text-align: center;
+}
+a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* Стили для логотипа и навигации */
+.header {
+  height: 7rem;
+}
+/* Кнопка Contact и Home */
+.header-btn {
+  background-color: #c62314;
+  border: 1px solid black;
+}
+.home {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: black;
+}
+.wrap {
+  display: table;
+  width: 100%;
+  height: 7rem;
+}
+.wrap-block {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* Оформление контента ниже шапки */
+.main-title {
+  text-align: left;
+  margin-top: 12rem;
+  color: #ffffff;
+}
+.main-title h1 {
+  font-family: Montserrat_bold, sans-serif;
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+.main-title h1 span {
+  color: #19162b;
+}
+.main-title p {
+  font-family: PTSerif_reg, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 4rem;
+}
+.main-form {
+  font-family: Montserrat_reg, sans-serif;
+  width: 30rem;
+  background-color: #ffffff;
+  padding: 2.5rem 2.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  position: absolute;
+  -webkit-transform: translateY(32%);
+          transform: translateY(32%);
+  -webkit-box-shadow: inset 0 0 15px 2px #c6c6c6;
+          box-shadow: inset 0 0 15px 2px #c6c6c6;
+}
+.main-form h2 {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+.main-form .main-input {
+  display: block;
+  font-size: 1.5rem;
+  font-family: PTSerif_reg, sans-serif;
+  width: 100%;
+  height: 4rem;
+  border: 1px solid #eeeeee;
+  background-color: #eeeeee;
+  border-radius: 0.3rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+.main-form .main-input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+.main-form .main-input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+.main-form .main-input:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+.main-form .main-input:focus::placeholder {
+  opacity: 0;
+}
+.main-form .main-input::-webkit-input-placeholder {
+  color: #b5b5b5;
+}
+.main-form small {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+.main-form button {
+  display: block;
+  margin-top: 1rem;
+  background-color: #c62314;
+  border: 0 solid;
+  border-radius: 0.3rem;
+  height: 4rem;
+  width: 100%;
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.main-form button:hover {
+  outline: none;
+  cursor: pointer;
+  background-color: #e93524;
+}
+.main-form label {
+  display: inline-block;
+  background-color: #ffffff;
+}
+.adventeges h1 {
+  font-family: Couture, sans-serif;
+  margin-left: 10rem;
+  margin-top: 3rem;
+}
+.adventeges h1 span {
+  color: #c62314;
+}
+.advantage {
+  padding-bottom: 1rem;
+}
+.advantage .lamp {
+  width: 6rem;
+}
+.advantage img {
+  display: block;
+  margin: 0 auto;
+  width: 8rem;
+  height: 8rem;
+  margin-top: 6rem;
+}
+.advantage p {
+  font-family: PTSerif_reg, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.ourstory {
+  background-color: #130e27;
+  width: 100%;
+  height: 8rem;
+  padding: 2.5rem;
+  text-align: right;
+}
+.ourstory p {
+  font-family: PTSerif_reg, sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: left;
+}
+.ourstory button {
+  border: 0 solid;
+  width: 80%;
+  height: 3.5rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-family: Montserrat_reg, sans-serif;
+  background-color: #c62314;
+  color: #ffffff;
+}
+.pricing {
+  background-color: #efefef;
+  text-align: center;
+}
+.pricing h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding: 3rem;
+}
+.pricing .price {
+  font-family: PTSerif_reg, sans-serif;
+  font-size: 1.2rem;
+  background-color: #ffffff;
+  padding-top: 2rem;
+}
+.pricing .price span {
+  font-family: Montserrat_bold, sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #c62314;
+}
+.pricing button {
+  font-family: Montserrat_bold, sans-serif;
+  text-transform: uppercase;
+  width: 70%;
+  background-color: #130e27;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+.pricing .price-btn {
+  padding-top: 1rem;
+}
+.pricing .price-btn .price-btn-red {
+  background-color: #c62314;
+}
+footer {
+  background-color: #130e27;
+  text-align: right;
+  height: 11rem;
+}
+footer p {
+  text-align: left;
+  color: #ffffff;
+  padding: 4rem 0;
+  font-size: 1rem;
+}
+footer p span {
+  color: #c62314;
+}
+footer img {
+  margin-top: 3rem;
+}
+.about {
+  padding-bottom: 4rem;
+}
+.about h3 {
+  font-family: Montserrat_bold, sans-serif;
+  font-size: 2.5rem;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.about .gallery {
+  text-align: center;
+}
+.about .gallery-1 {
+  color: #c62314;
+  -webkit-transform: translateX(-8%);
+          transform: translateX(-8%);
+}
+.about a {
+  font-family: Montserrat_reg, sans-serif;
+  text-decoration: underline;
+  color: #130e27;
+}
+.about .text,
+.about .photo {
+  display: inline-block;
+}
+.about .text {
+  font-family: PTSerif_reg, sans-serif;
+  font-size: 1rem;
+}
+.about .text .bravo {
+  font-family: Montserrat_bold, sans-serif;
+}
+.about .photo {
+  position: absolute;
+}
+.about .photo-1 {
+  right: 3.3rem;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+.about .quote-1 {
+  background-color: #efefef;
+  width: 80%;
+  margin-top: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  color: #c62314;
+}
+.about .quote-1 .bravo {
+  color: black;
+}
